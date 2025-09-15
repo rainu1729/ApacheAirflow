@@ -20,7 +20,7 @@ with DAG(
     dag_id='dummy_dag',
     default_args=default_args,
     description='My first DAG',
-    schedule_interval=timedelta(minutes=2),
+    schedule=timedelta(minutes=2),
     catchup=False,
     tags=['example'],
     max_active_runs=1,
